@@ -15,6 +15,9 @@
 .text-white {
   color: var(--fg-color);
 }
+.text-black {
+  color: var(--near-black);
+}
 .custom-card-border {
   border: 2px solid var(--hl-color);
 }
@@ -148,6 +151,9 @@ footer a {
 }
 footer a:hover {
   color: var(--link-color);
+}
+footer h4 {
+  letter-spacing: 0.5rem;
 }
 #footer .table-dark * {
   background-color: transparent;
