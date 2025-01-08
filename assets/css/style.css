@@ -9,6 +9,13 @@
     --fg-color-darker: #def2f1;
 }
 
+/* GENERAL */
+body *{
+    border-radius: 0 !important;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+ul {}
 /* Navbar */
 #navbar {
     background-color: var(--hl-color-dark);
@@ -32,4 +39,20 @@
     font-size: 10rem;
     color: var(--fg-color-darker);
     margin: 15px 0;
+}
+
+/* MAIN */
+.card {
+    border: 2px solid var(--hl-color);
+}
+.card-header,
+.card-footer {
+    /* border: 2px solid var(--hl-color); */
+    background-color: var(--hl-color);
+    color: var(--fg-color);
+}
+
+.card-header a,
+.card-footer a {
+    color: var(--fg-color);
 }
