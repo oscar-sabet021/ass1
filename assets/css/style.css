@@ -8,6 +8,7 @@
   --near-black: #17252a;
   --fg-color: #feffff;
   --fg-color-darker: #def2f1;
+  --link-color: #00aeff;
 }
 
 /* CUSTOM CLASSES */
@@ -58,7 +59,10 @@ section h2 {
 #navbar {
   background-color: var(--hl-color-dark);
 }
-
+#navbar .btn:hover {
+  background-color: var(--fg-color-darker);
+  color: var(--near-black);
+}
 /* Header */
 #header {
   background-color: var(--hl-color);
@@ -75,7 +79,8 @@ section h2 {
 
 .fa-shield-heart {
   font-size: 10rem;
-  color: var(--near-black);
+  color: var(--fg-color);
+  /* background-color: var(--fg-color-darker); */
   margin: 15px 0;
 }
 
@@ -107,19 +112,54 @@ section h2 {
 .card-div a.btn {
     /* margin-top: 2rem; */
 }
+/* #programmes .col-md-8 {
+  padding-bottom: 29px;
+} */
+#programmes img {
+  /* height: 100%; */
+  /* width: 350px; */
+  /* border-top-right-radius: 0rem !important; */
+}
+#programmes p {
+  font-size: 0.95rem;
+}
 section .btn {
   position: absolute;
   bottom: 10px;
   text-align: center;
   left: 10px;
 }
+.card-img-l {
+  max-height: ;
+}
 /* INFO */
 #info .card {
-  padding-bottom: 29px;
+  padding-bottom: 29px; /* space for button */
 }
 /* FOOTER */
 footer {
   background-color: var(--hl-color-dark);
   color: var(--fg-color);
+  padding: 3rem;
 }
- 
+footer a {
+  color: var(--fg-color-darker);
+  transition: 0.2s ease-in-out;
+}
+footer a:hover {
+  color: var(--link-color);
+}
+#footer .table-dark * {
+  background-color: transparent;
+}
+@media screen and (min-width: 425px) {
+  #footer h5 {
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #programmes img {
+    border-bottom-left-radius: 0rem !important;
+  }
+  
+}
