@@ -1,0 +1,22 @@
+
+
+/* VARIABLES */
+:root {
+    --hl-color: #3aafa9;
+    --hl-color-dark:#2b7a78;
+    --near-black: #17252a;
+    --fg-color: #feffff;
+    --fg-color-darker: #def2f1;
+}
+
+/* Header */
+#header {
+    background-color: var(--hl-color);
+}
+#header h1 {
+    font-size: 6rem;
+    color: var(--fg-color);
+}
+#header h2 {
+    color: var(--fg-color);
+}
