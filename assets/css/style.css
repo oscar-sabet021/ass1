@@ -66,12 +66,6 @@ section h2 {
   background-color: var(--fg-color);
   color: var(--near-black);
 }
-/* .offcanvas-body,
-.offcanvas-body * {
-  background-color: var(--hl-color);
-  color: var(--fg-color);
-} */
-/* Header */
 #header {
   background-color: var(--hl-color);
   padding: 2rem 0;
@@ -97,8 +91,8 @@ section h2 {
 #header .btn-primary:hover {
   background-color: var(--fg-color);
   color: var(--near-black);
-
 }
+
 /* MAIN */
 .card {
   background-color: var(--fg-color-darker);
