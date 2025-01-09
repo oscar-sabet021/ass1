@@ -4,7 +4,7 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Mental Health Awareness</title>
+  <title>Mental Health | Awareness</title>
   <!-- Meta -->
   <meta name="description"
     content="Mental health has a significant impact on people’s lives and wellbeing. To support people with mental illnesses, we need better data to understand them.">
@@ -35,7 +35,7 @@
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body shadow">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -268,6 +268,7 @@
               <h5 class="card-title rounded-0 pt-2">Diagnostics</h5>
             </div>
             <div class="col-lg-8 p-2">
+              <!-- <h5 class="card-title mt-2">Sometimes it's difficult to find out which mental illness may be causing your symptoms.</h5> -->
               <p class="card-text mt-2 text-center">
                 Sometimes it's difficult to find out which mental illness may be causing your symptoms. But taking the
                 time and effort to get an accurate diagnosis will help determine the appropriate treatment. The more
@@ -321,6 +322,7 @@
               <h5 class="card-title rounded-0 pt-2">Psychotherapy</h5>
             </div>
             <div class="col-lg-8 p-2">
+              <!-- <h5 class="card-title mt-2">Sometimes it's difficult to find out which mental illness may be causing your symptoms.</h5> -->
               <p class="card-text mt-2 text-center">
                 Psychotherapy, also called talk therapy, involves talking about your condition and related issues with a
                 mental health professional. During psychotherapy, you Diagnosing your condition conditions and your
@@ -462,6 +464,27 @@
   </script>
   <!-- Font Awesome kit -->
   <script src='https://kit.fontawesome.com/aa9af45995.js' crossorigin='anonymous'></script>
+  <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+  <!-- <script>
+    document
+      .querySelectorAll(".navbar-collapse .nav-link")
+      .forEach((link) => {
+        link.addEventListener("click", function (e) {
+          let section = document.querySelector(e.target.getAttribute("href"));
+          if (section) {
+            e.preventDefault(); // Prevent default anchor click behavior
+            let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+            window.scroll({
+              top: section.offsetTop - navbarHeight, // Adjust for navbar height
+              behavior: "smooth",
+            });
+            document
+              .querySelector(".navbar-collapse")
+              .classList.remove("show"); // Collapse navbar
+          }
+        });
+      });
+  </script> -->
 </body>
 
 </html>
