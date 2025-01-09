@@ -25,6 +25,11 @@
 }
 
 /* GENERAL */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body * {
   border-radius: 0;
   font-family: "Lora", serif;
