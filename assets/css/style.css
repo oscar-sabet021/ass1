@@ -172,11 +172,11 @@ a {
     padding: 0rem 0;
     position: fixed;
     z-index: -1;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     /* calc used to remove the header height */
     height: calc(100vh - 40px);
     width: 100vw;
-    padding: 25vw 0;
+    /* padding: 25vw 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -544,9 +544,13 @@ section {
         font-size: 2.8rem;
     }
     #header .fa-shield-heart {
-        font-size: 10rem;
+        font-size: 8rem;
         color: var(--fg-color);
         margin: 15px 0;
+    }
+    #header {
+        align-items: start;
+        padding-top: 2rem;
     }
 }
 
@@ -563,6 +567,9 @@ section {
     }
     #header h2 {
         font-size: 2.5rem;
+    }
+    #header {
+        align-items: center;
     }
     #home .col-lg-8 p {
         font-size: 0.8rem;
