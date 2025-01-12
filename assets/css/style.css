@@ -39,6 +39,43 @@
 }
 
 
+/* 
+.c-btn {
+    padding: 5px 20px;
+    background-color: var(--hl-color);
+    color: var(--fg-color);
+    border: 0;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.bl-btn {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 10px;
+}
+
+.c-btn:hover {
+    background-color: var(--hl-color-dark);
+    color: var(--fg-color);
+}
+
+.c-btn:focus {
+    background-color: var(--hl-color-dark);
+}
+
+.c-btn:checked {
+    background-color: var(--hl-color-dark);
+    color: var(--fg-color);
+}
+
+.c-btn:active {
+    background-color: var(--hl-color);
+    color: var(--fg-color);
+} */
+
+
 /* GENERAL */
 
 html,
@@ -47,10 +84,11 @@ body {
     overflow-x: hidden;
 }
 
-:cursor {
+
+/* :cursor {
     color: var(--hl-color);
     background-color: var(--fg-color);
-}
+} */
 
 #home {
     background-color: var(--fg-color);
@@ -98,6 +136,11 @@ a {
 
 .btn-primary:focus {
     background-color: var(--hl-color-dark);
+}
+
+.btn-primary:active {
+    /* Overrides bootstrap */
+    background-color: var(--hl-color) !important;
 }
 
 ::selection {
