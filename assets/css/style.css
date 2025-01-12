@@ -96,6 +96,10 @@ a {
     background-color: var(--hl-color-dark);
 }
 
+.btn-primary:focus {
+    background-color: var(--hl-color-dark);
+}
+
 ::selection {
     /* Custom highlight Color */
     background-color: var(--hl-color);
